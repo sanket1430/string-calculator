@@ -15,3 +15,7 @@ test('Two numbers are summed correctly', () => {
 test('Handles newlines as delimiters', () => {
   expect(add('1\n2,3')).toBe(6);
 });
+
+test('Handles custom delimiters', () => {
+  expect(add('//;\n1;2')).toBe(3);
+});
